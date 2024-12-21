@@ -1,3 +1,10 @@
+<?php
+
+declare(strict_types=1);
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -126,14 +133,254 @@
 
     // Increment / Decrement operators
 
-    $a = 1 ;
-    echo $a--;   
+    // $a = 1 ;
+    // echo $a--;   
     
-    echo "<br>";
+    // echo "<br>";
 
-    echo $a; // 2
+    // echo $a; // 2
 
-    ?>
+
+// condition structure
+// $bool  = true;
+// $a =1;
+// $b = 2;
+
+// if($a < $b && !$bool) {
+//     echo " First statement is true";
+
+// }
+// else if ($a < $b && !$bool){
+//     echo " Second statement is true";
+
+// }
+// else {
+//   echo " None of the conditions is true";
+// }
+
+
+// $bool  = true;
+// $a =3;
+// $b = 2;
+
+
+// switch($a) {
+//     case 1:
+//         echo "The first case is correcct!";
+//         break;
+
+//     case 3 :
+//         echo "The second case is correcct!";
+//         break;
+
+//     default:
+//         echo "None of the cases is correct!";
+//         break;
+//     }
+
+
+// match 
+
+//  $bool  = true;
+// $a ="10";
+// $b = 2;
+
+// $result = match($a) {
+
+//     1, 5, 10, 25 => "The first case is correcct!",
+//     3 => "The second case is correcct!",
+//     default => "None of the cases is correct!"
+
+// };
+
+// echo $result;
+
+
+// $fruits = array("apple", "banana", "orange");
+
+// $tasks = [
+//     "muraya" => "cleaning",
+//     "kamau" => "trash",
+//     "john" => "vacuum",
+//     "bellas" => "dishes",
+// ];
+
+
+// echo count($tasks)
+
+// $fruits = array("apple", "banana", "orange");
+// $test = ["mango", "pineapple"];
+
+// array_splice($fruits, 1, 0, $test);
+
+// print_r($fruits);
+
+
+// mulitdemensional array
+
+// $food =[ 
+
+
+//     "fruit" => ["apple", "banana", "orange"],
+//     "meat" => ["beef", "chicken", "pork"],
+//     "vegetables" => ["kales", "spinach", "cabbage"],
+    
+// ];
+
+// echo $food["vegetables"][2];
+
+// echo '<br>';
+
+// echo $food["meat"][2];
+// echo '<br>';
+
+// echo $food["fruit"][2];
+
+// echo '<br>';
+
+// echo $food["vegetables"][2] . ', ' . $food["fruit"][0];
+
+
+//  built in functions
+
+
+// $string = "Hello world!";
+
+//    explode(" ", $string);
+
+
+//  numbers math functions
+
+// $number = -5.5;
+
+// echo rand(1, 100);
+
+
+// $fruit = ['apple', 'banana', 'orange', 'pineapple'];
+
+// array_push($fruit, 'mango');
+// print_r($fruit);
+
+// array_pop($fruit);
+// print_r($fruit);
+
+
+// dates and time functions
+
+// echo date('Y-m-d H:i:s');
+
+// echo '<br>';
+
+// echo time();
+
+
+// $date = "2024-12-21 12:00:20";
+// echo strtotime($date);
+
+
+// user-defined functions 
+
+
+// function sayHello(int $num01, int $num02) {
+    
+//     $result = $num01 + $num02;
+//     return $result;
+// }
+
+// $test = sayHello(2, 2);
+// echo  $test;
+
+
+//  scope of variables local scope and global scope
+
+// $test = "Daniel"; // global scope
+
+// echo $test;
+
+// function sayHello() {
+
+//     $local = "John"; // local scope
+
+//     return $local;
+// }
+
+// echo sayHello();
+
+
+// function myfunction(){
+//    static  $staticvar = 2;
+
+//     $staticvar++;
+
+//     return $staticvar;
+// }
+
+// echo myfunction();
+// echo  myfunction();
+// echo  myfunction();
+
+
+// class 
+
+// class MyClass {
+
+//     public $classvar = "This is a class variable";
+
+//     public function myMethod()
+//      {
+//        echo $this -> classvar; 
+//     }
+// }
+
+// $myobject = new MyClass;
+
+// echo $myobject->classvar;
+
+
+// constant data that can't be change 
+
+    // define("PI", 3.14);
+    
+    // echo PI;
+
+
+
+    //  loop  for loop
+
+    // for($i = 0; $i <= 10; $i++) {
+    //     echo $i . "<br>";
+
+    // }
+
+
+    // while loop 
+ $i = 0;
+//     while($i <= 5) {
+//         echo $i . "<br>";
+//         $i++;
+//     }
+
+
+    // do{
+    //     echo $i . "<br>";
+    //     $i++;
+    // } while ($i <= 10);
+
+
+    // for each looop 
+  $fruit = [
+        "Apple" => "red",
+        "banana" => "Yellow", 
+        "Orange" => "blue",
+    ];
+
+  foreach($fruit as $fruit => $name) {
+      echo "This is a " . $fruit . ", That has a color of " .  $name . "<br>";
+  }
+
+
+?>
+
 
 </body>
 </html>
