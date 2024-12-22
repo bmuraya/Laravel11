@@ -20,4 +20,4 @@ function is_email_invalid( $email)  {
     }
 }
 
- check if username is alreay taken 
+//  check if username is alreay taken 
