@@ -11,14 +11,18 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" );{
 
     try{
 
-         require_once 'dbh.inc.php';
+         require_once 'dababase-handler-inc.php';
          require_once 'signup_model_inc.php';
          require_once 'signup_contr_inc.php';
 
 
         //  error handler 
         if ( is_input_empty( $username , $pwd, $email)) {
-            
+
+        }
+
+        if (  is_email_invalid( $email) ) {
+
         }
        
 
