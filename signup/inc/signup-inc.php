@@ -1,6 +1,7 @@
-<? php
+<?php
+if ($_SERVER["REQUEST_METHOD"] === "POST") 
 
-if ($_SERVER["REQUEST_METHOD"] === "POST" );{
+{
 
     $username = $_POST["username"] = htmlspecialchars(trim($_POST["username"]));
 
@@ -11,8 +12,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" );{
 
     try{
 
-         require_once 'dababase-handler-inc.php';
-         require_once 'signup_model_inc.php';
+         require_once 'dababase.inc.php';
+         require_once 'signup.model.inc.php';
          require_once 'signup_contr_inc.php';
 
 
@@ -43,16 +44,15 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" );{
             header("Location: ../index.php");
         }   
        
+        var_dump($errors);
 
     } catch (PDOException $e) {
         die( "Query Failed: " . $e->getMessage());
     }
 
-
 }  else {
 
-    header("Location: ../index.php.php?form=error");
+    header("Location: ../index.php.php");
     die();
     
-
-}
+} 

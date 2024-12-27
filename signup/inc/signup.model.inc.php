@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
  
-function is_input_empty( $username , $pwd, $email)  {
+function is_input_empty(  string $username , string $pwd,  string $email)  {
     if (empty($username) || empty($pwd) || empty($email)) {
         return true;
     } else {
@@ -13,7 +13,7 @@ function is_input_empty( $username , $pwd, $email)  {
 
 function get_username( object  $pdo , string $username) {
 
- $query = "SELECT * FROM users WHERE username = :username";
+ $query = "SELECT username FROM users WHERE username = :username";
 
  $stmt = $pdo->prepare($query);
     $stmt->bindParam(':username', $username, PDO::PARAM_STR);
