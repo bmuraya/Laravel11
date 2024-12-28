@@ -1,5 +1,5 @@
 <?php
-require_once 'inc/config-session-inc.php';
+require_once 'inc/config.session.inc.php';
 require_once 'inc/signup.view.inc.php';
 ?>
 
