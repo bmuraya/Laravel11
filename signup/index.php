@@ -1,6 +1,6 @@
 <?php
 require_once 'inc/config-session-inc.php';
-require_once 'inc/signup_view_inc.php';
+require_once 'inc/signup.view.inc.php';
 ?>
 
 
@@ -28,12 +28,7 @@ require_once 'inc/signup_view_inc.php';
     <?php
 
     check_signup_errors();
-
-   
-
-
-
-  ?>
+   ?>
  
  <hr>
     <h3>Login</h3>

@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST")
 
          require_once 'dababase.inc.php';
          require_once 'signup.model.inc.php';
-         require_once 'signup_contr_inc.php';
+         require_once 'signup.contr.inc.php';
 
 
         //  error handler 

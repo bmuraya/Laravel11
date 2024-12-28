@@ -10,8 +10,10 @@ session_set_cookie_params([
     'domain' => 'localhost',
     'secure' => true,
     'httponly' => true,
-    'secure' => true
+   
 ]);
+
+//prevent session  from being used more than 30 mins by hacker
 
  session_start();
 
