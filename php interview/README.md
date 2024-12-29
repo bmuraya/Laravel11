@@ -410,4 +410,23 @@ At this point, both $a and $b hold the value '21', as $b is a reference to $a.
   
 
 
-###  
+###  what are __construct() and __destruct() in PHP 
+    In PHP, __construct() and __destruct() are magic methods used in object-oriented programming. They are part of the lifecycle of a class instance (an object)
+
+   -  __construct()
+        - Purpose: Acts as the constructor of a class. It is automatically called when an object of the class is created.
+        - Use Case: Often used to initialize properties, allocate resources, or perform setup tasks when an object is instantiated. 
+
+    - __destruct()
+        - Purpose: Acts as the destructor of a class. It is automatically called when the object is no longer needed (e.g., when it goes out of scope or is explicitly unset).
+        - Use Case: Used to release resources, perform cleanup tasks, or close database connections before the object is destroyed
+
+
+### how can PHP and Javascript interect 
+
+        -PHP and JavaScript interact by exchanging data between the server (where PHP executes) and the client (where JavaScript runs). This interaction is often facilitated using HTTP requests and embedded PHP/JavaScript 
+
+## Explain type Hinting In PHP 
+
+        Type hinting is a feature in PHP that allows developers to specify the expected data type for function arguments, return values, and properties. This ensures that the correct type of data is used, helping to prevent bugs and improve code readability and maintainabilit
+
