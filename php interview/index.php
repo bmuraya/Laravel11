@@ -1,4 +1,8 @@
-<?php
+<?php 
 
+$a = '1';
+$b = &$a;
+$b = "2$b";
+echo $a .", " .$b
 
-echo $_REQUEST['name']; // Outputs the 'name' parameter passed in a form
+?>

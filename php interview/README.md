@@ -237,3 +237,176 @@ define ("PI", 3.14);
 
 ###### Advance Part 
 
+
+## how can i execute a php script from commnad line
+- Executing a PHP script from the command line can be useful for running background jobs, testing scripts, or performing server-side tasks without a browser 
+ 
+
+ Bash 
+
+  php -v
+
+##  Defferent btw $variable  and $$variable 
+
+ - $varible is a siomple variable use to store data 
+ - $$varible  is a reference varible to varibeles 
+  
+
+### different  btw  GET and  POST 
+
+    **GET**
+    - used to submit form data 
+    - sends data as part of page URL 
+    - Not secure 
+
+    **POST** 
+    - used to submit form data 
+    - sends data through HTTP header 
+    - secure
+
+### how to connect to connect to a data base using PHP script?
+
+        ```php
+        
+            $HOST = "localhost";
+            $username = "username";
+            $password = "pwd";
+
+            // Create connection
+
+            $conn = new mysqli($HOST, $username, $password);    
+
+
+            // check connection
+            if ($conn->connect_error) {
+                die("Connection failed: " . $conn->connect_error);
+            }
+            echo "Connected successfully";
+
+        ```
+
+### what does final class and final methos mean in php 
+
+ - final class means that the class cannot be extended
+ - A final method means that it cannot be overriden 
+
+
+### Differentiate btw Function overloading and Overidding 
+
+- OVERLOADING
+    the same function is used for diffrent purpose based on the number of arguments inside the function 
+
+-OVERRIDING
+    the same namr and same argument function is used in parent and child class respectively to chang the behaviour of parent class method 
+
+
+### Differentiate btw ==  and == operator 
+
+ the ==   used to check if value of two operands are equal or not 
+ ===  performa typesafe comparasion which mean that it will only return true if both operands have the same type and same value 
+
+    ```php
+      1=== 1; //true
+      1== 1; //true 
+      1 === "1"; // false 
+      1 == "1";  // true 
+      "check" === "check";  //true 
+    ```
+
+
+## How does Exception Handling Work in PhP?
+ when an exception is thrown, code following the statement will not be executed, and PHP will attempt to find the firs matching catch block 
+
+ if an exception is not caught, a pHP fatal error wiill be isssued with an "uncaught exception" . An execption can be thrown, and caught within PHP
+
+
+##  Differentiate btw require() and include()
+        - REQUIRE()
+            -if a required file is not  found, it will throw a fatal error and stops the code execution.
+
+        -INCLUDE()
+            - if an essential file is not found, it will produce a warning and execute the remaining scripts 
+
+
+## Explain different types of errors in PHP 
+
+    - NOTICE 
+        It is a non critical error meaning something minor went wrong during execution 
+
+    - WARNING 
+        its is crital error. it is given in condition where suppose an include() went to retrieve a non existant file 
+
+    - FATAL ERROR 
+        - Its is a critcal error resulting in termination of code 
+
+
+### how to call a function by reference 
+     '&' sign is used to call a function by reference, in case of reference, the actual value is modified if the value passed inside th function is modified  
+
+
+### create a singleton class in PHP 
+    A Singleton pattern ensures that a class has only one instance and provides a global point of access to that instance.
+
+
+## how to encrypt a password using PHP 
+    the  password_hash() create a hash password from the passowrd string  using hashing algorithm 
+
+    ```php
+      
+            $pwd = "password@123";
+
+            echo "original Password: " . $pwd . "<br>";
+
+            $hashedPwd = password_hash($pwd, PASSWORD_DEFAULT);
+
+            echo "Generated Hashed Password: " . $hashedPwd; 
+    ```
+
+### Mention diffrent sorting function for Arrays in PHP
+        In PHP, there are several built-in sorting functions that allow you to sort arrays in different ways. These functions can sort arrays in ascending or descending order, maintain or not maintain key-value pairs, and work with different types of data (e.g., numeric, associative)
+
+        # PHP Array Sorting Functions
+
+| **Function**         | **Sort Type**                                           | **Key Preservation**    |
+|-----------------------|---------------------------------------------------------|--------------------------|
+| `sort()`             | Ascending (by value)                                   | No                      |
+| `asort()`            | Ascending (by value)                                   | Yes                     |
+| `ksort()`            | Ascending (by key)                                     | Yes                     |
+| `rsort()`            | Descending (by value)                                  | No                      |
+| `arsort()`           | Descending (by value)                                  | Yes                     |
+| `krsort()`           | Descending (by key)                                    | Yes                     |
+| `usort()`            | User-defined comparison (by value)                     | No                      |
+| `uasort()`           | User-defined comparison (by value)                     | Yes                     |
+| `uksort()`           | User-defined comparison (by key)                       | Yes                     |
+| `natcasesort()`      | Ascending (natural order, case-insensitive)            | No                      |
+| `natsort()`          | Ascending (natural order, case-sensitive)              | No                      |
+| `array_multisort()`  | Sort multiple arrays or multidimensional arrays        | Yes                     |
+
+
+what will be the output of the following Code ?
+
+
+    ```php
+      $a = '1';
+      $b = &$a;
+      $b = "2$b";
+      echo $a .", " .$b
+    ```
+    Step-by-Step Execution:
+$a = '1';
+
+A variable $a is initialized with the string value '1'.
+$b = &$a;
+
+$b is assigned as a reference to $a.
+This means $b does not hold its own value but instead refers to the same memory location as $a. Any change to $b will directly affect $a, and vice versa.
+$b = "2$b";
+
+Since $b is a reference to $a, $b refers to the current value of $a, which is '1'.
+The value of $b is updated to the string "2$b". Here, $b is interpolated within the double quotes, and its value at this moment is '1'. So, the new value of $b becomes '21'.
+Because $b is a reference to $a, $a is also updated to '21'.
+echo $a .", " .$b;
+
+At this point, both $a and $b hold the value '21', as $b is a reference to $a.
+The output of the echo statement is:
+Copy code
