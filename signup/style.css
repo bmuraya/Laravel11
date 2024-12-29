@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-   background-color: #000; 
+   /* background-color: #000;  */
     margin: 0;
     padding: 0;
     display: flex;
@@ -18,7 +18,7 @@ main {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 100%;
-    max-width: 400px;
+    max-width: 600px;
     
 }
 
@@ -47,4 +47,15 @@ input {
     color: red;
     font-size: 0.6em;
     margin: auto;
+}
+
+.success{
+    color: green;
+    font-size: 0.6em;
+
+}
+
+.login{
+    color: #1c60dd;
+    font-size: 0.4em;
 }

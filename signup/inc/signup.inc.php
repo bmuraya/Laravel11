@@ -33,8 +33,16 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     if ($errors) {
         $_SESSION["errors_signup"] = $errors;
+
+        $signupData =[
+            'username' => $username,
+            'email' => $email
+        ];
+
+        $_SESSION["signup_data"] = $signupData;
+
         header("Location: ../index.php");
-        exit();
+        die();
     }
 
     try {
@@ -52,9 +60,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         // Redirect on success
         $_SESSION["signup_success"] = "Account created successfully. You can now log in.";
+       
         header("Location: ../index.php");
-        exit();
-        
+        die();
+
     } catch (PDOException $e) {
         die("Query Failed: " . $e->getMessage());
     }
