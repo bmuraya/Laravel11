@@ -1,8 +1,11 @@
-<?php 
 
-$a = '1';
-$b = &$a;
-$b = "2$b";
-echo $a .", " .$b
 
+<?php
+$variable = "Hello from PHP!";
 ?>
+<script>
+    let message = "<?php echo $variable; ?>";
+    console.log(message); // Output: Hello from PHP!
+</script>
+
+

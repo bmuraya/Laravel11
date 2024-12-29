@@ -382,8 +382,7 @@ define ("PI", 3.14);
 | `natsort()`          | Ascending (natural order, case-sensitive)              | No                      |
 | `array_multisort()`  | Sort multiple arrays or multidimensional arrays        | Yes                     |
 
-
-what will be the output of the following Code ?
+### what will be the output of the following Code ?
 
 
     ```php
@@ -408,5 +407,7 @@ Because $b is a reference to $a, $a is also updated to '21'.
 echo $a .", " .$b;
 
 At this point, both $a and $b hold the value '21', as $b is a reference to $a.
-The output of the echo statement is:
-Copy code
+  
+
+
+###  
