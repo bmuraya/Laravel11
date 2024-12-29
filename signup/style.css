@@ -1,15 +1,16 @@
 body {
     font-family: Arial, sans-serif;
-    /* background-color: #000; */
+   background-color: #000; 
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    color: #fff;
+    /* color: #822d2d; */
     font-size: 4em;
 }
+
 
 main {
     background: #fff;
@@ -18,7 +19,9 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 100%;
     max-width: 400px;
+    
 }
+
 h3{
     color: #760505;
     margin:auto;
@@ -42,4 +45,6 @@ input {
 
 .error{
     color: red;
+    font-size: 0.6em;
+    margin: auto;
 }

@@ -1,6 +1,6 @@
 <?php
-require_once 'inc/config.session.inc.php';
-require_once 'inc/signup.view.inc.php';
+require_once 'inc/config_session.inc.php';
+require_once 'inc/signup_view.inc.php';
 ?>
 
 
@@ -17,7 +17,7 @@ require_once 'inc/signup.view.inc.php';
 <body>
     <main>
 <h3>signup</h3>
-<form action="inc/signup-inc.php" method="post">
+<form action="inc/signup.inc.php" method="post">
     <input type="text" name="username" placeholder="Username">
     <input type="password" name="pwd" placeholder="Password">
     <input type="email" name="email" placeholder="E-mail">
@@ -25,19 +25,23 @@ require_once 'inc/signup.view.inc.php';
 
     </form>
 
-    <?php
-
-    check_signup_errors();
-   ?>
+  
  
  <hr>
     <h3>Login</h3>
-<form action="inc/login-inc.php" method="post">
+<form action="inc/login.inc.php" method="post">
     <input type="text" name="username" placeholder="Username">
     <input type="password" name="pwd" placeholder="Password">
     <button type="submit" class="button" name="submit">Submit</button>
 
     </form>
+ <br>
+
+
+    <?php
+check_signup_errors();
+
+    ?>
 
     </main>
 

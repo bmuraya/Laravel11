@@ -1,14 +1,14 @@
 <?php
 
-declare(strict_types=1);
+declare(strict_types=1); 
  
-function is_input_empty(  string $username , string $pwd,  string $email)  {
-    if (empty($username) || empty($pwd) || empty($email)) {
-        return true;
-    } else {
-        return false;
-    }
-}
+// function is_input_empty(  string $username , string $pwd,  string $email)  {
+//     if (empty($username) || empty($pwd) || empty($email)) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
 
 
 function get_username( object  $pdo , string $username) {
@@ -22,9 +22,7 @@ function get_username( object  $pdo , string $username) {
     $result = $stmt->fetch(PDO::FETCH_ASSOC);
     return $result;
     
-
 }
-
 
 function get_email( object  $pdo , string $email) {
 
@@ -36,7 +34,7 @@ function get_email( object  $pdo , string $email) {
        
        $result = $stmt->fetch(PDO::FETCH_ASSOC);
        return $result;
-       
+     
    
    }
 
