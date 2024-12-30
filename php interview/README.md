@@ -81,6 +81,12 @@ it is partially case sensitive since variable names in PHPO are case- sentive wh
 - Null 
 - resource 
 
+PHP data types are used to hold different types of data or values. There are 8 primitive data types which are further categorized in 3 types:
+
+    - Scalar types
+    - Compound types
+    - Special types
+
 
 
 ## how is "echo" different from "print"
@@ -250,6 +256,8 @@ define ("PI", 3.14);
 
  - $varible is a siomple variable use to store data 
  - $$varible  is a reference varible to varibeles 
+
+ - *$message* stores variable data while *$$message* is used to store variable of variables.
   
 
 ### different  btw  GET and  POST 
