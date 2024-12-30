@@ -430,3 +430,5 @@ At this point, both $a and $b hold the value '21', as $b is a reference to $a.
 
         Type hinting is a feature in PHP that allows developers to specify the expected data type for function arguments, return values, and properties. This ensures that the correct type of data is used, helping to prevent bugs and improve code readability and maintainabilit
 
+###  What is the name of scripting engine in PHP?
+    - The scripting engine that powers PHP is called Zend Engine 2.
