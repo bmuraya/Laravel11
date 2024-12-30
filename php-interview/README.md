@@ -359,6 +359,10 @@ define ("PI", 3.14);
 ## how to encrypt a password using PHP 
     the  password_hash() create a hash password from the passowrd string  using hashing algorithm 
 
+### What are the encryption functions in PHP?
+    -CRYPT() and MD5()
+
+
     ```php
       
             $pwd = "password@123";
@@ -372,6 +376,28 @@ define ("PI", 3.14);
 
 ### Mention diffrent sorting function for Arrays in PHP
         In PHP, there are several built-in sorting functions that allow you to sort arrays in different ways. These functions can sort arrays in ascending or descending order, maintain or not maintain key-value pairs, and work with different types of data (e.g., numeric, associative)
+
+
+## PHP Array Types
+    There are 3 types of array in PHP.
+
+    Indexed Array
+        
+    ```php
+        - $season=array("summer","winter","spring","autumn"); 
+    ``` 
+
+    Associative Array
+     - $salary=array("Sonoo"=>"350000","John"=>"450000","Kartik"=>"200000");  
+
+    Multidimensional Array
+        -$emp = array  
+            (  
+            array(1,"sonoo",400000),  
+            array(2,"john",500000),  
+            array(3,"rahul",300000)  
+            );  
+
 
         # PHP Array Sorting Functions
 
@@ -440,3 +466,5 @@ At this point, both $a and $b hold the value '21', as $b is a reference to $a.
 
 ###  What is the name of scripting engine in PHP?
     - The scripting engine that powers PHP is called Zend Engine 2.
+
+
