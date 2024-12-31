@@ -9,7 +9,7 @@ class Car {
 
     private $brand;  // visibility modifyer  public, private, protected
     private $color;
-    private $vechicleType = "Car";
+    private $vechicleType ;
 
     //  constructor method 
     

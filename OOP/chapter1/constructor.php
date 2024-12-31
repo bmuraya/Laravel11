@@ -2,14 +2,10 @@
 
 class Product
 {
-    Public $name;
-    public $price;
 
-
-    public function __construct($name, $price)
+  public function __construct( public $name= 'soap', public $price = 100)
     {
-        $this->name = $name;
-        $this->price = $price;
+        
     }
 
   
@@ -21,6 +17,6 @@ class Product
     }
 }
 
-$product = new Product('babu', 550);
+$product = new Product(price: 200);
 print $product->name . PHP_EOL;
 print $product->price. PHP_EOL;
