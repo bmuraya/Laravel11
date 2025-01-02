@@ -24,6 +24,7 @@
 // print "Perimeter: " . $rectangle->getPerimeter() . "</br>";
 
 
+// Write a PHP class called 'Circle' that has a radius property. Implement methods to calculate the circle's area and circumference
 
 class Circle {
     private $radius;

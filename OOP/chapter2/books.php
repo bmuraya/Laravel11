@@ -61,6 +61,10 @@
         return $this->fileSizes;
     }
 
+    public function print(): string
+    {
 
+         $string = "{"
+    }
 
   }

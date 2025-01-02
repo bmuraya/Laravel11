@@ -44,3 +44,6 @@ $soapObject2->price = 650;
 
 $priceascurency = $soapObject2->priceAscurrency();
 var_dump($priceascurency). "\n";
+
+?>!
+
