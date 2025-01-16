@@ -116,6 +116,8 @@ LARAVEL PATCH
       //       ->delete();
 
 
+
+
       // Car::truncate();
 
 
@@ -133,3 +135,6 @@ LARAVEL PATCH
       //   dd($maker);
 
       // User::factory()->count(10)->create();
+
+
+      **  Projecr Base tutorial 
